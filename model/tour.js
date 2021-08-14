@@ -37,9 +37,10 @@ const Tour = sequelize.define('Tour', {
   }
 });
 
-// Tour.sync({ force: true });
+// Tour.sync({ force: true })
 
 const mockTourfunc = async () => {
+  console.log('mockTourFunc');
   const mockTour = await Tour.create({
     title: 'Jack The Ripper',
     location: 'Central London',

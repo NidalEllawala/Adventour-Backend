@@ -1,5 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 
+
 const sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_OWNER,
@@ -10,13 +11,28 @@ const sequelize = new Sequelize(
   }
 );
 
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Connection has been established successfully.');
-  })
-  .catch((err) => {
-    console.error('Unable to connect to the database:', err);
-  });
+const User = require('./user')(sequelize, DataTypes);
+const Tour = require('./tour')(sequelize, DataTypes);
+const Booking = require('./booking')(sequelize, DataTypes);
 
-module.exports = { sequelize, DataTypes };
+User.hasMany(Booking, {
+  foreignKey: 'userId'
+});
+Booking.belongsTo(User);
+
+Tour.hasMany(Booking, {
+  foreignKey: 'tourId'
+});
+Booking.belongsTo(Tour);
+
+(async () => {
+  try {
+    await sequelize.authenticate();
+    console.log('Connection has been established successfully.');
+    await sequelize.sync({force: true});
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
+})();
+
+//module.exports = { sequelize, DataTypes };

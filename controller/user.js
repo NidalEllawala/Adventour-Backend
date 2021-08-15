@@ -14,7 +14,7 @@ const registerUser = async (req, res) => {
       DOB
     });
     console.log('here is the user: ', newUser);
-    newUser.save();
+    // newUser.save();
     res.sendStatus(201);
   } catch (error) {
     console.log(error);

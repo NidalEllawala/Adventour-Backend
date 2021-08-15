@@ -1,8 +1,6 @@
-const { sequelize, DataTypes } = require('./index');
-const { Tour } = require('./tour');
-const { User } = require('./user');
 
-const Booking = sequelize.define('Booking', {
+module.exports = (sequelize, DataTypes) => {
+  const booking = sequelize.define('Booking', {
   password: {
     type: DataTypes.STRING
   },
@@ -18,39 +16,25 @@ const Booking = sequelize.define('Booking', {
   chapter: {
     type: DataTypes.INTEGER
   }
-  // tour: {
-  //   type: DataTypes.STRING
-  // },
-  // host: {
-  //   type: DataTypes.STRING
-  // }
 });
+return booking;
+}
 
-// User.hasMany(Booking, {
-//   as: 'host'
-// });
-// Tour.hasMany(Booking, {
-//   as: 'tourId'
-// });
+// // (async () => {
+// //   try {
+// //     const mockBooking = await Booking.create({
+// //       // host: 1,
+// //       password: 'join my game',
+// //       partySize: 4,
+// //       date: '2021-08-15T14:06:43.150Z',
+// //       open: true,
+// //       chapter: 1,
+// //       price: 30
+// //       // tourId: 1
+// //     });
+// //   } catch (error) {
+// //     console.log(error);
+// //   }
+// // })();
 
-const mockBookingFunc = async () => {
-  try {
-    const mockBooking = await Booking.create({
-      // host: 1,
-      password: 'join my game',
-      partySize: 4,
-      date: '2021-08-15T14:06:43.150Z',
-      open: true,
-      chapter: 1,
-      price: 30
-      // tourId: 1
-    });
-    await mockBooking.save();
-  } catch (error) {
-    console.log(error);
-  }
-};
-mockBookingFunc();
-Booking.sync({ force: true });
-
-module.exports = { Booking };
+// module.exports = { Booking };

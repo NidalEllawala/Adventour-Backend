@@ -1,5 +1,6 @@
-const { sequelize, DataTypes } = require('./index');
-const User = sequelize.define('User', {
+
+module.exports = (sequelize, DataTypes) => {
+  const user = sequelize.define('User', {
   username: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -25,7 +26,5 @@ const User = sequelize.define('User', {
     allowNull: false
   }
 });
-
-// User.sync({ force: true });
-
-module.exports = { User };
+return user;
+}

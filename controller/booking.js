@@ -1,4 +1,4 @@
-const { Booking } = require('../model/booking');
+const { Booking } = require('../model/index');
 
 const getBooking = async (req, res) => {
   try {
@@ -21,7 +21,7 @@ const createNewBooking = async (req, res) => {
       open: true,
       chapter: 1,
     });
-    res.sendStaus(201);
+    res.sendStatus(201);
   } catch (error) {
     console.log(error);
     res.status(401).send('Bookings for this tour are currently full');

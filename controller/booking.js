@@ -11,21 +11,22 @@ const getBooking = async (req, res) => {
 
 const createNewBooking = async (req, res) => {
   try {
-    const {password, tourId, userId, partySize, date} = req.body;
+    const { password, TourId, UserId, partySize, date } = req.body;
     await Booking.create({
       password,
-      tourId,
-      userId,
+      TourId,
+      UserId,
       date,
       partySize,
+      joined: 0,
       open: true,
-      chapter: 1,
+      chapter: 1
     });
     res.sendStatus(201);
   } catch (error) {
     console.log(error);
     res.status(401).send('Bookings for this tour are currently full');
   }
-}
+};
 
 module.exports = { getBooking, createNewBooking };

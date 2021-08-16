@@ -5,7 +5,7 @@ const { User, Tour, Booking, Player } = require('../model/index');
 const mockUsers = [
   {
     username: 'Marius',
-    email: 'mariusobreja@gamil.com',
+    email: 'mariusobreja@gmail.com',
     password: 'pa55word',
     DOB: '1980-07-17'
   },
@@ -42,11 +42,18 @@ const mockBooking = {
 };
 
 (async () => {
-  await sequelize.authenticate();
-  await sequelize.sync({ force: true });
-  User.bulkCreate(mockUsers);
-  Tour.create(mockTour);
-  Booking.create(mockBooking);
+  try {
+    await sequelize.sync({ force: true });
+    console.log('Database synced!');
+    await User.bulkCreate(mockUsers);
+    console.log('Users created!');
+    await Tour.create(mockTour);
+    console.log('Tour created!');
+    await Booking.create(mockBooking);
+    console.log('Booking created!');
+  } catch (error) {
+    console.log(error);
+  }
 })();
 
 // const mockBooking = {

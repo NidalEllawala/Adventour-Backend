@@ -20,24 +20,16 @@ const Tour = require('./tour')(sequelize, DataTypes);
 const Booking = require('./booking')(sequelize, DataTypes);
 const Player = require('./player')(sequelize, DataTypes);
 
-User.hasMany(Booking, {
-  // foreignKey: 'userId'
-});
+User.hasMany(Booking);
 Booking.belongsTo(User);
 
-Tour.hasMany(Booking, {
-  // foreignKey: 'tourId'
-});
+Tour.hasMany(Booking);
 Booking.belongsTo(Tour);
 
-User.hasMany(Player, {
-  // foreignKey: 'userId'
-});
+User.hasMany(Player);
 Player.belongsTo(User);
 
-Booking.hasMany(Player, {
-  // foreignKey: 'userId'
-});
+Booking.hasMany(Player);
 Player.belongsTo(Booking);
 
 (async () => {

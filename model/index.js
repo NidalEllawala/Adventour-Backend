@@ -11,10 +11,10 @@ const sequelize = new Sequelize(
   }
 );
 
-
 const User = require('./user')(sequelize, DataTypes);
 const Tour = require('./tour')(sequelize, DataTypes);
 const Booking = require('./booking')(sequelize, DataTypes);
+const Player = require('./player')(sequelize, DataTypes);
 
 User.hasMany(Booking, {
   foreignKey: 'userId'
@@ -25,6 +25,16 @@ Tour.hasMany(Booking, {
   foreignKey: 'tourId'
 });
 Booking.belongsTo(Tour);
+
+User.hasMany(Player, {
+  foreignKey: 'userId'
+});
+Player.belongsTo(User);
+
+Booking.hasMany(Player, {
+  foreignKey: 'userId'
+});
+Player.belongsTo(Booking);
 
 (async () => {
   try {
@@ -47,4 +57,4 @@ Booking.belongsTo(Tour);
   }
 })();
 
-module.exports = { User, Tour, Booking };
+module.exports = { User, Tour, Booking, Player };

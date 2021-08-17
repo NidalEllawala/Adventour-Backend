@@ -19,7 +19,7 @@ const Booking = require('./booking')(sequelize, DataTypes);
 const Player = require('./player')(sequelize, DataTypes);
 const Character = require('./characters')(sequelize, DataTypes);
 const Weapon = require('./weapons')(sequelize, DataTypes);
-const CharminCrossCharmer = require('./charingCrossCharmer')(
+const CharingCrossCharmer = require('./charingCrossCharmer')(
   sequelize,
   DataTypes
 );
@@ -60,5 +60,5 @@ module.exports = {
   sequelize,
   Character,
   Weapon,
-  CharminCrossCharmer
+  CharingCrossCharmer
 };

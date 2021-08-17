@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     direction: {
-      type: DataTypes.STRING
+      type: DataTypes.TEXT
     },
     hint: {
       type: DataTypes.STRING

@@ -17,6 +17,12 @@ const User = require('./user')(sequelize, DataTypes);
 const Tour = require('./tour')(sequelize, DataTypes);
 const Booking = require('./booking')(sequelize, DataTypes);
 const Player = require('./player')(sequelize, DataTypes);
+const Character = require('./characters')(sequelize, DataTypes);
+const Weapon = require('./weapons')(sequelize, DataTypes);
+const CharminCrossCharmer = require('./charingCrossCharmer')(
+  sequelize,
+  DataTypes
+);
 
 User.hasMany(Booking);
 Booking.belongsTo(User);
@@ -30,6 +36,12 @@ Player.belongsTo(User);
 Booking.hasMany(Player);
 Player.belongsTo(Booking);
 
+Tour.hasMany(Character);
+Character.belongsTo(Tour);
+
+Tour.hasMany(Weapon);
+Weapon.belongsTo(Tour);
+
 (async () => {
   try {
     await sequelize.authenticate();
@@ -40,4 +52,13 @@ Player.belongsTo(Booking);
   }
 })();
 
-module.exports = { User, Tour, Booking, Player, sequelize };
+module.exports = {
+  User,
+  Tour,
+  Booking,
+  Player,
+  sequelize,
+  Character,
+  Weapon,
+  CharminCrossCharmer
+};

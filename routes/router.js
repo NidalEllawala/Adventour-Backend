@@ -11,7 +11,7 @@ router.post('/registerUser', registerUser);
 router.post('/loginUser', loginUser);
 
 router.get('/getTours', getTours);
-router.get('/getIndividualTour', getIndividualTour);
+router.post('/getIndividualTour', getIndividualTour);
 
 router.post('/newBooking', createNewBooking);
 router.get('/getBooking', getBooking);

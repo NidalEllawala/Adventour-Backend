@@ -2,9 +2,11 @@ const { Tour } = require('../model/index');
 
 const getTours = async (req, res) => {
   try {
+
     const allTours = await Tour.findAll({
       attributes: [
         'id',
+        'images',
         'title',
         'location',
         'rating',

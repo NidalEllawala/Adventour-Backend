@@ -111,7 +111,7 @@ const mockTours = [
 ];
 
 const mockBooking = {
-  password: 'join my game',
+  password: 12345,
   partySize: 2,
   joined: 0,
   date: '2021-10-19 10:23:54+02',

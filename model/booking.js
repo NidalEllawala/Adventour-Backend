@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
   const booking = sequelize.define('Booking', {
     password: {
-      type: DataTypes.STRING
+      type: DataTypes.INTEGER
     },
     partySize: {
       type: DataTypes.INTEGER

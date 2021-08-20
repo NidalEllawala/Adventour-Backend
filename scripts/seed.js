@@ -192,49 +192,49 @@ const mockCharacter = [
 
 const mockWeapon = [
   {
-    weapon: 'Dagger',
+    name: 'Dagger',
     image:
       'https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-cartoon-military-dagger-illustration-image_1290890.jpg',
     TourId: 1,
     number: 1910
   },
   {
-    weapon: 'Rope',
+    name: 'Rope',
     image:
       'https://media.istockphoto.com/vectors/rope-in-cartoon-style-vector-id1159542493?k=6&m=1159542493&s=170667a&w=0&h=wjH2ca30O3JW08j2_uytbN6uRCxwh5_4aeuPfi6Yl-U=',
     TourId: 1,
     number: 8971
   },
   {
-    weapon: 'Boot',
+    name: 'Boot',
     image:
       'https://img.pixers.pics/pho_wat(s3:700/FO/59/87/11/18/700_FO59871118_ae92c5254a9cb227439de7fed6ff1bcc.jpg,700,628,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,578,jpg)/posters-old-shoe-or-boot-cartoon-clip-art.jpg.jpg',
     TourId: 1,
     number: 1853
   },
   {
-    weapon: 'Lead Pipe',
+    name: 'Lead Pipe',
     image:
       'https://thumbs.dreamstime.com/b/sticker-cartoon-old-pipe-creative-illustrated-147737535.jpg',
     TourId: 1,
     number: 1642
   },
   {
-    weapon: 'Axe',
+    name: 'Axe',
     image:
       'https://thumbs.dreamstime.com/b/cartoon-ax-hatchet-vector-symbol-icon-design-beautiful-illustration-isolated-white-background-91710927.jpg',
     TourId: 1,
     number: 1818
   },
   {
-    weapon: 'Baton',
+    name: 'Baton',
     image:
       'https://cdn2.iconfinder.com/data/icons/policeman-6/500/vab880_17_policeman_baton_isometric_cartoon_logo_hand_silhouette-512.png',
     TourId: 1,
     number: 1940
   },
   {
-    weapon: 'Rifle',
+    name: 'Rifle',
     image:
       'https://image.shutterstock.com/image-vector/weapon-rifle-gun-vector-military-260nw-1954604344.jpg',
     TourId: 1,

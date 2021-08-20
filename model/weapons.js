@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const weapons = sequelize.define('Weapon', {
-    weapon: {
+    name: {
       type: DataTypes.STRING
     },
     image: {
@@ -15,3 +15,4 @@ module.exports = (sequelize, DataTypes) => {
   });
   return weapons;
 };
+

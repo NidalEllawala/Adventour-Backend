@@ -256,7 +256,7 @@ const mockCharingCrossCharmer = [
     charImage: '',
     direction: 'No other direction hints',
     hint: 'Find satue of Napier: Use decoder in detective notebook',
-    answer: 'Boot'
+    answer: '1853'
   },
   {
     clue: 'Stand outside Marconi House and spot a sequence of windows and Corinthian columns. Above them is an attic with carved figures, oval windows and swags. The four figures are carrying a weapon that can be removed from your investigation',
@@ -264,7 +264,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Go to the statue of Sir Henry Havelock. Facing away from The National Gallery, turn left and safely cross the pedestrian crossing. Continue straight to walk along Strand. Follow busy Strand for approx. 1km until you reach 335 Marconi House (ensureroads are safe to cross, use available pedestrian crossings).',
     hint: 'Weapon rhymes with tax.',
-    answer: 'Axe'
+    answer: '1818'
   },
   {
     clue: 'Spot the statue in honour of the freedom fighter who died in 1964. Take the 3rd 8th and 10th letters from his first name, and the 1st, 2nd and 5th letters from his surname. Rearrange these letters to create a synonym for ‘impaired’. Enter this word into the Cryptic Crossword.',
@@ -325,7 +325,7 @@ const mockCharingCrossCharmer = [
     charImage: '',
     direction: 'Stay on Wardour St for your next clue',
     hint: 'Just past the Chinatown Gate. Number in reverse',
-    answer: 'Rope'
+    answer: '8971'
   },
   {
     clue: 'His heart has strong sympathies, but what does his mind have? Remove the `s` and then choose your answer.',
@@ -341,7 +341,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Walk down Regent Street St. James`s (not Regent Street) using the left-hand pavement. Your next clue can be found somewhere along this street. This is a busy area, so take care when crossing any roads and only try to solve the following clue once stationary on a path.',
     hint: 'Look up high at the symbols on No. 1 Regent Street St. James`s building.',
-    answer: 'Rifle'
+    answer: '1535'
   },
   {
     clue: 'Look around to discover WHo wAs The second son of George III. Solve thIS clue correctly and tHe answer will match up to the fIrSt name of an innocenT suspect wIth a waTertight aLibi. Now walk down to thE bottom of the steps.',
@@ -357,7 +357,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Turn left onto The Mall. Keep walking until you reach the edge of the steps just before Admiralty Arch landmark. The latin inscription at the top of the arch translates to: `In the tenth year of King Edward VII, to Queen Victoria from most grateful citizens...`followed by an important year...',
     hint: 'Use the detective notebook',
-    answer: 'Dagger'
+    answer: '1910'
   },
   {
     clue: 'What is long as a foot and slippery?',

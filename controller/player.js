@@ -10,7 +10,7 @@ const joinGame = async (req, res) => {
       where: { BookingId: booking.id, UserId: userId }
     });
     if (playerInGame) {
-      res.status(201).send('You have already joined');
+      res.status(201).json({joined: true});
     } else if (playerInGame === null && booking.joined < booking.partySize) {
       await Player.create({
         BookingId: booking.id,
@@ -19,13 +19,13 @@ const joinGame = async (req, res) => {
       booking.joined += 1;
       await booking.save();
       console.log(booking);
-      res.status(201).send('Player joined');
+      res.status(201).json({joined: true});
     } else {
-      res.status(401).send('Game already full. Please try a diferent game!');
+      res.status(401).json({joined: false});
     }
   } catch (error) {
     console.log(error);
-    res.send('Invalid bookingId');
+    res.status(403).json({joined: false});
   }
 };
 

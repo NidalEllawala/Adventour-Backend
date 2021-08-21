@@ -34,7 +34,11 @@ module.exports = (sequelize, DataTypes) => {
     validate: {
       isUrl: true
     }
+  },
+  clues: {
+    type: DataTypes.INTEGER
   }
+
 });
 return tour;
 }

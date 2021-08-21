@@ -19,6 +19,6 @@ router.get('/getBooking', getBooking);
 router.post('/joinGame', joinGame);
 
 router.post('/addInfo', getAddInfo);
-router.get('/getNextClue', getNextClue);
+router.post('/getNextClue', getNextClue);
 
 module.exports = { router };

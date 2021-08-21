@@ -1,5 +1,5 @@
 const { CharingCrossCharmer } = require('../model/index');
-
+//alter controoler to search table based on tour name
 const getNextClue = async (req, res) => {
   try {
     const nextClue = await CharingCrossCharmer.findOne({

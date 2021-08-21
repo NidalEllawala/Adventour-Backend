@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.17.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:seed": "node ./scripts/seed.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "ng build",
+    "heroku-postbuild": "ng build --prod"
   },
   "repository": {
     "type": "git",
@@ -19,6 +24,7 @@
   },
   "homepage": "https://github.com/NidalEllawala/Adventour-Backend#readme",
   "dependencies": {
+    "@stripe/stripe-react-native": "^0.2.0",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",

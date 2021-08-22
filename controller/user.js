@@ -43,6 +43,7 @@ const loginUser = async (req, res) => {
       }
     }
   } catch (error) {
+    res.send({response: 'Login unsuccessful'});
     console.log(error);
   }
 };

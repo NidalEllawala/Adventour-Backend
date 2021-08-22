@@ -32,14 +32,14 @@ const loginUser = async (req, res) => {
     }
 
     if (!user) {
-      res.status(401).send('Invalid login credentials. Please try again!');
+      res.status(401).send({response: 'Invalid login credentials. Please try again!'});
     } else {
       const validPassword = await bcrypt.compare(password, user.password);
 
       if (validPassword) {
         res.status(200).json(user);
       } else {
-        res.status(401).send('Invalid login credentials. Please try again!');
+        res.status(401).send({response: 'Invalid login credentials. Please try again!'});
       }
     }
   } catch (error) {

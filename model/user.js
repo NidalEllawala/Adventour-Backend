@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     DOB: {
       type: DataTypes.DATEONLY,
-      allowNull: false
+      allowNull: true
     }
   });
   return user;

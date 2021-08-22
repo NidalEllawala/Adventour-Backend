@@ -16,6 +16,7 @@ const registerUser = async (req, res) => {
     console.log('here is the user: ', newUser);
     res.status(201).json(newUser);
   } catch (error) {
+    res.send(error);
     console.log(error);
   }
 };

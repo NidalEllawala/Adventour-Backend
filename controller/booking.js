@@ -20,7 +20,7 @@ const createNewBooking = async (req, res) => {
       password: uid,
       joined: 0,
       open: true,
-      chapter: 1
+      chapter: 1 //this can probably be removed
     });
     res.status(201).json(newBooking);
   } catch (error) {

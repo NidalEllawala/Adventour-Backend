@@ -1,30 +1,40 @@
-const { Player, Booking } = require('../model/index');
+const { Player, Booking, Tour } = require('../model/index');
 
 const joinGame = async (req, res) => {
-  const { bookingId, userId } = req.body;
+  const { password, userId } = req.body;
   console.log('Join Game');
   try {
-    const booking = await Booking.findOne({ where: { id: bookingId } });
+    const booking = await Booking.findOne({ where: { password: password } });
+    const tour = await Tour.findOne({where: {id : booking.TourId}})
+    console.log(booking);
     const playerInGame = await Player.findOne({
-      where: { BookingId: bookingId, UserId: userId }
+      where: { BookingId: booking.id, UserId: userId }
     });
     if (playerInGame) {
-      res.status(201).send('You have already joined');
+      res.status(201).json({
+        joined: true,
+        tour: tour.title,
+        clues: tour.clues
+      }); //player already in game
     } else if (playerInGame === null && booking.joined < booking.partySize) {
       await Player.create({
-        BookingId: bookingId,
+        BookingId: booking.id,
         UserId: userId
       });
       booking.joined += 1;
       await booking.save();
       console.log(booking);
-      res.status(201).send('Player joined');
+      res.status(201).json({
+        joined: true,
+        tour: tour.title,
+        clues: tour.clues
+      }); //player joined
     } else {
-      res.status(401).send('Game already full. Please try a diferent game!');
+      res.status(401).json({joined: false}); //game full
     }
   } catch (error) {
     console.log(error);
-    res.send('Invalid bookingId');
+    res.status(403).json({joined: false}); //invalid password
   }
 };
 

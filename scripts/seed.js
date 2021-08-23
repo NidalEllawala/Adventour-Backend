@@ -36,6 +36,7 @@ const mockTours = [
       'Agatha at The Angel Islington… Barbara on Bow Street… And now Cilla on Coventry Street. Three seduced ladies were murdered with a deliberate trail of taunting calling cards left by the cunning culprit. You face your most formidable challenge yet, with wits matched against an egotistical maniac. Can you deduce who the serial killer is and put an end to this sequence of catastrophes before they strike again?',
     distance: 4.1,
     price: 25.0,
+    clues: 16,
     images:
       'https://www.history.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTU3ODc5MDg1NjI4MDA3NzUz/jack-the-ripper-2.jpg'
   },
@@ -125,42 +126,42 @@ const mockCharacter = [
   {
     name: 'Penny Maroon',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-U01UZ86UGRE-c2495f7b7b96-512',
     TourId: 1,
     description: 'Vengeful school peer bullied by Agatha Marpe 15 years ago.'
   },
   {
     name: 'Violet Jellicoe',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-U01DUDU1XM3-3ec75e2c3eba-512',
     TourId: 1,
     description: 'The envious and mistreated best friend of Barbie Dahl.'
   },
   {
     name: 'Pom Looney',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-U0223SFCDN0-d101953f5169-512',
     TourId: 1,
     description: 'Eerie games salesman found unconscious near crime scenes.'
   },
   {
     name: 'Sara Plum',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-U021X03FKC0-c46b4a35fe23-512',
     TourId: 1,
     description: "Cilla's PA. Found Cilla's plans to siphon money from victims."
   },
   {
     name: 'Adelphi Darker',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-U01MCQDHS7J-12d9bb0cbe6b-512',
     TourId: 1,
     description: 'Owns Darker Bros (a huge game manufacturer) with Duke.'
   },
   {
     name: 'Duke Darker',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-U01RVMNLLMS-2e65aac6229f-512',
     TourId: 1,
     description:
       'Had affair with Cilla, who later blackmailed him for his wealth.'
@@ -168,7 +169,7 @@ const mockCharacter = [
   {
     name: 'Tim Tycoon',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-U01S1RD74F6-68b2295c5d6b-512',
     TourId: 1,
     description:
       "Son of a senile property mogul. Saw father's wife Cilla have an affair."
@@ -176,14 +177,14 @@ const mockCharacter = [
   {
     name: 'Henrietta Green',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-U01CX2ZB90E-653e8b546246-512',
     TourId: 1,
     description: 'Seen near crime scene with a dagger in her handbag.'
   },
   {
     name: 'Dr. Agon',
     image:
-      'https://randomwordgenerator.com/img/picture-generator/5ee8d04b4f54b10ff3d8992cc12c30771037dbf85254784a742e72d49345_640.jpg',
+      'https://ca.slack-edge.com/T0WU5R8NT-UREPE1AR2-d3cad052b4a2-512',
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
@@ -255,7 +256,7 @@ const mockCharingCrossCharmer = [
     charImage: '',
     direction: 'No other direction hints',
     hint: 'Find satue of Napier: Use decoder in detective notebook',
-    answer: 'Boot'
+    answer: '1853'
   },
   {
     clue: 'Stand outside Marconi House and spot a sequence of windows and Corinthian columns. Above them is an attic with carved figures, oval windows and swags. The four figures are carrying a weapon that can be removed from your investigation',
@@ -263,7 +264,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Go to the statue of Sir Henry Havelock. Facing away from The National Gallery, turn left and safely cross the pedestrian crossing. Continue straight to walk along Strand. Follow busy Strand for approx. 1km until you reach 335 Marconi House (ensureroads are safe to cross, use available pedestrian crossings).',
     hint: 'Weapon rhymes with tax.',
-    answer: 'Axe'
+    answer: '1818'
   },
   {
     clue: 'Spot the statue in honour of the freedom fighter who died in 1964. Take the 3rd 8th and 10th letters from his first name, and the 1st, 2nd and 5th letters from his surname. Rearrange these letters to create a synonym for ‘impaired’. Enter this word into the Cryptic Crossword.',
@@ -324,7 +325,7 @@ const mockCharingCrossCharmer = [
     charImage: '',
     direction: 'Stay on Wardour St for your next clue',
     hint: 'Just past the Chinatown Gate. Number in reverse',
-    answer: 'Rope'
+    answer: '8971'
   },
   {
     clue: 'His heart has strong sympathies, but what does his mind have? Remove the `s` and then choose your answer.',
@@ -340,7 +341,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Walk down Regent Street St. James`s (not Regent Street) using the left-hand pavement. Your next clue can be found somewhere along this street. This is a busy area, so take care when crossing any roads and only try to solve the following clue once stationary on a path.',
     hint: 'Look up high at the symbols on No. 1 Regent Street St. James`s building.',
-    answer: 'Rifle'
+    answer: '1535'
   },
   {
     clue: 'Look around to discover WHo wAs The second son of George III. Solve thIS clue correctly and tHe answer will match up to the fIrSt name of an innocenT suspect wIth a waTertight aLibi. Now walk down to thE bottom of the steps.',
@@ -356,7 +357,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Turn left onto The Mall. Keep walking until you reach the edge of the steps just before Admiralty Arch landmark. The latin inscription at the top of the arch translates to: `In the tenth year of King Edward VII, to Queen Victoria from most grateful citizens...`followed by an important year...',
     hint: 'Use the detective notebook',
-    answer: 'Dagger'
+    answer: '1910'
   },
   {
     clue: 'What is long as a foot and slippery?',

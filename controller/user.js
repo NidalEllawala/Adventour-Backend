@@ -14,8 +14,9 @@ const registerUser = async (req, res) => {
       DOB
     });
     console.log('here is the user: ', newUser);
-    res.sendStatus(201);
+    res.status(201).json(newUser);
   } catch (error) {
+    res.send(error);
     console.log(error);
   }
 };
@@ -31,17 +32,18 @@ const loginUser = async (req, res) => {
     }
 
     if (!user) {
-      res.status(401).send('Invalid login credentials. Please try again!');
+      res.status(401).send({response: 'Invalid login credentials. Please try again!'});
     } else {
       const validPassword = await bcrypt.compare(password, user.password);
 
       if (validPassword) {
         res.status(200).json(user);
       } else {
-        res.status(401).send('Invalid login credentials. Please try again!');
+        res.status(401).send({response: 'Invalid login credentials. Please try again!'});
       }
     }
   } catch (error) {
+    res.send({response: 'Login unsuccessful'});
     console.log(error);
   }
 };

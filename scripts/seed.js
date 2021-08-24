@@ -125,66 +125,78 @@ const mockBooking = {
 const mockCharacter = [
   {
     name: 'Penny Maroon',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-U01UZ86UGRE-c2495f7b7b96-512',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U01UZ86UGRE-c2495f7b7b96-512',
     TourId: 1,
     description: 'Vengeful school peer bullied by Agatha Marpe 15 years ago.'
   },
   {
     name: 'Violet Jellicoe',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-U01DUDU1XM3-3ec75e2c3eba-512',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U01DUDU1XM3-3ec75e2c3eba-512',
     TourId: 1,
     description: 'The envious and mistreated best friend of Barbie Dahl.'
   },
   {
-    name: 'Pom Looney',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-U0223SFCDN0-d101953f5169-512',
+    name: 'Andrew Looney',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U0223SFCDN0-d101953f5169-512',
     TourId: 1,
     description: 'Eerie games salesman found unconscious near crime scenes.'
   },
   {
     name: 'Sara Plum',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-U021X03FKC0-c46b4a35fe23-512',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U021X03FKC0-c46b4a35fe23-512',
     TourId: 1,
     description: "Cilla's PA. Found Cilla's plans to siphon money from victims."
   },
   {
     name: 'Adelphi Darker',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-U01MCQDHS7J-12d9bb0cbe6b-512',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U01MCQDHS7J-12d9bb0cbe6b-512',
     TourId: 1,
     description: 'Owns Darker Bros (a huge game manufacturer) with Duke.'
   },
   {
     name: 'Duke Darker',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-U01RVMNLLMS-2e65aac6229f-512',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U01RVMNLLMS-2e65aac6229f-512',
     TourId: 1,
     description:
       'Had affair with Cilla, who later blackmailed him for his wealth.'
   },
   {
     name: 'Tim Tycoon',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-U01S1RD74F6-68b2295c5d6b-512',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U01S1RD74F6-68b2295c5d6b-512',
     TourId: 1,
     description:
       "Son of a senile property mogul. Saw father's wife Cilla have an affair."
   },
   {
     name: 'Henrietta Green',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-U01CX2ZB90E-653e8b546246-512',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U01CX2ZB90E-653e8b546246-512',
     TourId: 1,
     description: 'Seen near crime scene with a dagger in her handbag.'
   },
   {
     name: 'Dr. Agon',
-    image:
-      'https://ca.slack-edge.com/T0WU5R8NT-UREPE1AR2-d3cad052b4a2-512',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-UREPE1AR2-d3cad052b4a2-512',
+    TourId: 1,
+    description:
+      'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
+  },
+  {
+    name: 'Una Well',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U013MH7F6FL-9620c0520371-512',
+    TourId: 1,
+    description:
+      'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
+  },
+  {
+    name: 'Agret Werop',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U01H36GTUMD-d4226efa2eed-512',
+    TourId: 1,
+    description:
+      'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
+  },
+  {
+    name: 'Sam Sacrifice',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U020Y4N10G3-84cbe0f218af-512',
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
@@ -227,13 +239,13 @@ const mockWeapon = [
     TourId: 1,
     number: 1818
   },
-  {
-    name: 'Baton',
-    image:
-      'https://cdn2.iconfinder.com/data/icons/policeman-6/500/vab880_17_policeman_baton_isometric_cartoon_logo_hand_silhouette-512.png',
-    TourId: 1,
-    number: 1940
-  },
+  // {
+  //   name: 'Baton',
+  //   image:
+  //     'https://cdn2.iconfinder.com/data/icons/policeman-6/500/vab880_17_policeman_baton_isometric_cartoon_logo_hand_silhouette-512.png',
+  //   TourId: 1,
+  //   number: 1940
+  // },
   {
     name: 'Rifle',
     image:
@@ -272,7 +284,7 @@ const mockCharingCrossCharmer = [
     direction:
       'After Marconi House turn left onto Montreal Place for your next clue.',
     hint: 'Statue of Jawaharlal Nehru',
-    answer: 'unwell'
+    answer: 'Una Well'
   },
   {
     clue: 'At the end of Russell St is Covent Garden. Find the family motto of the Dukes of Bedford inscribed somewhere around the market. The motto contains the first name of an innocent suspect twice. Factoid: The motto translates to ‘Whatever Will Be, Will Be',
@@ -303,7 +315,7 @@ const mockCharingCrossCharmer = [
     direction:
       'At the end of Maiden Lane safely cross over the road onto Chandos Place. Follow Chandos Place to the end (safely crossing any roads) and turn right onto William IV St. At the end, cross to the left-hand pavement using the zebra crossing for your next clue.',
     hint: 'Look up at large memorial',
-    answer: 'Sacrifice'
+    answer: 'Sam Sacrifice'
   },
   {
     clue: 'Find the building that was once the site of a postal office (even once the price of postage had doubled). The name of this postal service matches up to the first name of an innocent suspect. At the end of Gerrard St turn left onto Wardour St for your next clue.',
@@ -333,7 +345,7 @@ const mockCharingCrossCharmer = [
     direction:
       'At the pedestrian crossing in front turn right onto Coventry St. Follow Coventry St until you reach Piccadilly Circus (safely crossing any roads as you go and use pedestrian crossings where available). Walk over to the Shaftesbury Memorial Fountain for your next clue.',
     hint: 'Look closely at the inscriptions on the fountain.',
-    answer: 'GreatPower'
+    answer: 'Agret Werop'
   },
   {
     clue: 'To my left is Caduceus, and a bundle of crops. To my right is a wood stock. What weapon am I? The answer can be removed from your inquiries.',
@@ -360,12 +372,12 @@ const mockCharingCrossCharmer = [
     answer: 'Dagger'
   },
   {
-    clue: 'What is long as a foot and slippery?',
+    clue: 'I met a man on the London Bridge. He tipped his hat and drew his name. In this riddle I told you his name.',
     charImage: '',
     direction:
       'In order to find out the name of the murderer you will have to solve a riddle and the answer will rhyme with the surname of the last suspect that is not guilty.',
     hint: 'You can wear it at the sea.',
-    answer: 'Slipper'
+    answer: 'Andrew Looney'
   }
 ];
 

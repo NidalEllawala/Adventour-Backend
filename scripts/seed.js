@@ -256,7 +256,7 @@ const mockCharingCrossCharmer = [
     charImage: '',
     direction: 'No other direction hints',
     hint: 'Find satue of Napier: Use decoder in detective notebook',
-    answer: '1853'
+    answer: 'Boot'
   },
   {
     clue: 'Stand outside Marconi House and spot a sequence of windows and Corinthian columns. Above them is an attic with carved figures, oval windows and swags. The four figures are carrying a weapon that can be removed from your investigation',
@@ -264,7 +264,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Go to the statue of Sir Henry Havelock. Facing away from The National Gallery, turn left and safely cross the pedestrian crossing. Continue straight to walk along Strand. Follow busy Strand for approx. 1km until you reach 335 Marconi House (ensureroads are safe to cross, use available pedestrian crossings).',
     hint: 'Weapon rhymes with tax.',
-    answer: '1818'
+    answer: 'Axe'
   },
   {
     clue: 'Spot the statue in honour of the freedom fighter who died in 1964. Take the 3rd 8th and 10th letters from his first name, and the 1st, 2nd and 5th letters from his surname. Rearrange these letters to create a synonym for ‘impaired’. Enter this word into the Cryptic Crossword.',
@@ -280,14 +280,14 @@ const mockCharingCrossCharmer = [
     direction:
       'Exit India Place and turn left onto Aldwych. At the end of Aldwych turn right to cross over the pedestrian crossing. Then take your first right onto Wellington St. Using the left-hand pavement follow Wellington St until you reach Russell St (3rd left), safely crossing any roads as you go.',
     hint: 'Outside of the market building. Look up high for family crest with inscription underneath',
-    answer: 'Plum'
+    answer: 'Sara Plum'
   },
   {
     clue: 'This clue should also be answered in Covent Garden. Between King and Southampton is a passage that shares its name with an innocent suspect.',
     charImage: '',
     direction: 'No other direction hints',
     hint: 'What street is between King St. and Southampton St.?',
-    answer: 'Henrietta'
+    answer: 'Henrietta Green'
   },
   {
     clue: 'Hunt for an anecdote honouring a man who met his untimely death outside a theatre. This theatre shares it’s name with an innocent suspect whose alibi has been verified. This suspect can be removed from your investigation.',
@@ -295,7 +295,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Exit Covent Garden via Southampton St using the right-hand pavement. Then turn right onto Maiden Lane where you’ll find your next clue.',
     hint: 'Look for a green circular plaque in honour of William Terris',
-    answer: 'Adelphi'
+    answer: 'Adelphi Darker'
   },
   {
     clue: 'You are now in St. Martin’s Place. Spot the missing word from the following list: fortitude, devotion, humanity. You don’t need to cross any roads to solve this clue. Press on the missing word.',
@@ -311,21 +311,21 @@ const mockCharingCrossCharmer = [
     direction:
       'Cross over St. Martin’s Place (to be on the same side as the National Portrait Gallery) using the pedestrian crossing, then turn right. Follow Charing Cross Rd and take the first left onto Irving St. At the end of Irving St turn slightly right and walk along the edge of Leicester Square to the next corner. Turn right onto Cranbourn St, then left onto Leicester Court. At the end of Leicester Court safely cross over the road onto Newport Place. At the end of the road turn left onto Gerrard St. Your next clue can be found on Gerrard St.',
     hint: 'Find the correct green circular plaque (there are a few).',
-    answer: 'Penny'
+    answer: 'Penny Maroon'
   },
   {
     clue: 'A suspect meets with you and says “First of all, I did not kill any of the victims. I have an alibi for each of those dreadful nights with eye witness accounts. I wanted to discuss with you another suspect - Pom Flipper. He is a patient of mine. Pom suffers from severe memory blackouts as the result of a head injury from the war. That’s where he picked up the nickname Pom. Now, I’m not necessarily accusing him, but he may not remember the incidents even if he was involved. Pom’s mind is becoming increasingly fragile and he could potentially be a target of manipulation. Also, something I noticed - take a look at the letters which make up the name on the calling card and Pom’s name!” The Chinatown Gate on Wardour St features many ancient motifs. A popular Chinese symbol featured on the gate is also the name of the suspect who just met you. Can you figure out who? They have a watertight alibi and can be removed from your inquiries.',
     charImage: '',
     direction: 'The next clue can also be discovered in Chinatown.',
     hint: 'Mythical beast is a dragon.',
-    answer: 'Agon'
+    answer: 'Dr. Agon'
   },
   {
     clue: 'EaSy theRE. a number on the old exchange and bullion office matches up to a weapon that can be remoVEd from youR inquiries. you`re gettiNg close detectIve. keep it up!',
     charImage: '',
     direction: 'Stay on Wardour St for your next clue',
     hint: 'Just past the Chinatown Gate. Number in reverse',
-    answer: '8971'
+    answer: 'Rope'
   },
   {
     clue: 'His heart has strong sympathies, but what does his mind have? Remove the `s` and then choose your answer.',
@@ -341,7 +341,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Walk down Regent Street St. James`s (not Regent Street) using the left-hand pavement. Your next clue can be found somewhere along this street. This is a busy area, so take care when crossing any roads and only try to solve the following clue once stationary on a path.',
     hint: 'Look up high at the symbols on No. 1 Regent Street St. James`s building.',
-    answer: '1535'
+    answer: 'Rifle'
   },
   {
     clue: 'Look around to discover WHo wAs The second son of George III. Solve thIS clue correctly and tHe answer will match up to the fIrSt name of an innocenT suspect wIth a waTertight aLibi. Now walk down to thE bottom of the steps.',
@@ -349,7 +349,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Continue down Regent Street St. James’s which leads onto Waterloo Place. Walk to the end of Waterloo Place, safely crossing over Pall Mall using the pedestrian crossing. At the end of Waterloo Place cross over Carlton House Terrace and onto the large set of steps.',
     hint: 'Look for a plaque. What was Frederick`s title?',
-    answer: 'Duke'
+    answer: 'Duke Darker'
   },
   {
     clue: '...but what year is this? The date matches up to a weapon that can be eliminated. Congratulations! Make sure you also solve the `Breaking Clues` to crack the case!',
@@ -357,7 +357,7 @@ const mockCharingCrossCharmer = [
     direction:
       'Turn left onto The Mall. Keep walking until you reach the edge of the steps just before Admiralty Arch landmark. The latin inscription at the top of the arch translates to: `In the tenth year of King Edward VII, to Queen Victoria from most grateful citizens...`followed by an important year...',
     hint: 'Use the detective notebook',
-    answer: '1910'
+    answer: 'Dagger'
   },
   {
     clue: 'What is long as a foot and slippery?',

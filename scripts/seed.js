@@ -125,78 +125,78 @@ const mockBooking = {
 const mockCharacter = [
   {
     name: 'Penny Maroon',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipOnafd2dB6Qe4tdJnd-4yD3P6pKyNFZla42mvnm',
+    image: 'https://i.imgur.com/yR3iRRV.png',
     TourId: 1,
     description: 'Vengeful school peer bullied by Agatha Marpe 15 years ago.'
   },
   {
     name: 'Violet Jellicoe',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipMID3d8w0idJtuWxp6rPtpxGvyYe6Gvh9zE_-Yp',
+    image: 'https://i.imgur.com/SPqcSOS.png',
     TourId: 1,
     description: 'The envious and mistreated best friend of Barbie Dahl.'
   },
   {
     name: 'Andrew Looney',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipPZmuOJ96rqv-X8puuPYO2xaB7mh3N8EIaxyp4O',
+    image: 'https://i.imgur.com/oY6tjpt.png',
     TourId: 1,
     description: 'Eerie games salesman found unconscious near crime scenes.'
   },
   {
     name: 'Sara Plum',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipOwswWNtaffxK8xrnDylOZ_pWnt1vvdvc76lZyp',
+    image: 'https://i.imgur.com/xRcGMJV.png',
     TourId: 1,
     description: "Cilla's PA. Found Cilla's plans to siphon money from victims."
   },
   {
     name: 'Adelphi Darker',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipOVuGk2qSD2Ill_2f7DEe8i18hL4zGvqg5MA2nc',
+    image: 'https://i.imgur.com/6JG07IS.png',
     TourId: 1,
     description: 'Owns Darker Bros (a huge game manufacturer) with Duke.'
   },
   {
     name: 'Duke Darker',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipN00edGCIugBMdtN929B2sGkiX715mn39dXNl6Y',
+    image: 'https://i.imgur.com/JtyyBRI.png',
     TourId: 1,
     description:
       'Had affair with Cilla, who later blackmailed him for his wealth.'
   },
   {
     name: 'Tim Tycoon',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipMc_SmUvP6IznUWgQxpAeyB-MkOsE3yPdEyq9GQ',
+    image: 'https://i.imgur.com/RXqtR8r.png',
     TourId: 1,
     description:
       "Son of a senile property mogul. Saw father's wife Cilla have an affair."
   },
   {
     name: 'Henrietta Green',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipPsph5Ov4fYTgSEi2RhWUjcZKkJzyT7t0ROQDKG',
+    image: 'https://i.imgur.com/ScWIfof.png',
     TourId: 1,
     description: 'Seen near crime scene with a dagger in her handbag.'
   },
   {
     name: 'Dr. Agon',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipPnvYOSZpBI8VrCkVwht4DDaifGSC9YO74muced',
+    image: 'https://i.imgur.com/eR1lOia.png',
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
   },
   {
     name: 'Una Well',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipMVEyyOujiMaSgmat4YtCMBDUfM4J4UWPKSuiS-',
+    image: 'https://i.imgur.com/floiGbb.png',
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
   },
   {
     name: 'Agret Werop',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipNLv4WqyvBmLKO2sVS3cOFpxEJIpZLqt6qWaDXy',
+    image: 'https://i.imgur.com/D5ITkWl.png',
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
   },
   {
     name: 'Sam Sacrifice',
-    image: 'https://photos.google.com/album/AF1QipOv5AfkxG43mznY6efNhqR1GIyxTCGsGaobjyCD/photo/AF1QipN-Rg3fiKM7XQOiHDk2KzV-aggClt9z_j_1IayO',
+    image: 'https://i.imgur.com/NASDgvC.png',
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'

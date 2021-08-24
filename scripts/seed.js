@@ -136,7 +136,7 @@ const mockCharacter = [
     description: 'The envious and mistreated best friend of Barbie Dahl.'
   },
   {
-    name: 'Pom Looney',
+    name: 'Andrew Looney',
     image: 'https://ca.slack-edge.com/T0WU5R8NT-U0223SFCDN0-d101953f5169-512',
     TourId: 1,
     description: 'Eerie games salesman found unconscious near crime scenes.'
@@ -372,12 +372,12 @@ const mockCharingCrossCharmer = [
     answer: 'Dagger'
   },
   {
-    clue: 'What is long as a foot and slippery?',
+    clue: 'I met a man on the London Bridge. He tipped his hat and drew his name. In this riddle I told you his name.',
     charImage: '',
     direction:
       'In order to find out the name of the murderer you will have to solve a riddle and the answer will rhyme with the surname of the last suspect that is not guilty.',
     hint: 'You can wear it at the sea.',
-    answer: 'Slipper'
+    answer: 'Andrew Looney'
   }
 ];
 

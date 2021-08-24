@@ -179,6 +179,27 @@ const mockCharacter = [
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
+  },
+  {
+    name: 'Una Well',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U013MH7F6FL-9620c0520371-512',
+    TourId: 1,
+    description:
+      'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
+  },
+  {
+    name: 'Agret Werop',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U01H36GTUMD-d4226efa2eed-512',
+    TourId: 1,
+    description:
+      'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
+  },
+  {
+    name: 'Sam Sacrifice',
+    image: 'https://ca.slack-edge.com/T0WU5R8NT-U020Y4N10G3-84cbe0f218af-512',
+    TourId: 1,
+    description:
+      'Psychiatrist. Lust for Cilla always denied as not filthy rich.'
   }
 ];
 
@@ -218,13 +239,13 @@ const mockWeapon = [
     TourId: 1,
     number: 1818
   },
-  {
-    name: 'Baton',
-    image:
-      'https://cdn2.iconfinder.com/data/icons/policeman-6/500/vab880_17_policeman_baton_isometric_cartoon_logo_hand_silhouette-512.png',
-    TourId: 1,
-    number: 1940
-  },
+  // {
+  //   name: 'Baton',
+  //   image:
+  //     'https://cdn2.iconfinder.com/data/icons/policeman-6/500/vab880_17_policeman_baton_isometric_cartoon_logo_hand_silhouette-512.png',
+  //   TourId: 1,
+  //   number: 1940
+  // },
   {
     name: 'Rifle',
     image:
@@ -263,7 +284,7 @@ const mockCharingCrossCharmer = [
     direction:
       'After Marconi House turn left onto Montreal Place for your next clue.',
     hint: 'Statue of Jawaharlal Nehru',
-    answer: 'unwell'
+    answer: 'Una Well'
   },
   {
     clue: 'At the end of Russell St is Covent Garden. Find the family motto of the Dukes of Bedford inscribed somewhere around the market. The motto contains the first name of an innocent suspect twice. Factoid: The motto translates to ‘Whatever Will Be, Will Be',
@@ -294,7 +315,7 @@ const mockCharingCrossCharmer = [
     direction:
       'At the end of Maiden Lane safely cross over the road onto Chandos Place. Follow Chandos Place to the end (safely crossing any roads) and turn right onto William IV St. At the end, cross to the left-hand pavement using the zebra crossing for your next clue.',
     hint: 'Look up at large memorial',
-    answer: 'Sacrifice'
+    answer: 'Sam Sacrifice'
   },
   {
     clue: 'Find the building that was once the site of a postal office (even once the price of postage had doubled). The name of this postal service matches up to the first name of an innocent suspect. At the end of Gerrard St turn left onto Wardour St for your next clue.',
@@ -324,7 +345,7 @@ const mockCharingCrossCharmer = [
     direction:
       'At the pedestrian crossing in front turn right onto Coventry St. Follow Coventry St until you reach Piccadilly Circus (safely crossing any roads as you go and use pedestrian crossings where available). Walk over to the Shaftesbury Memorial Fountain for your next clue.',
     hint: 'Look closely at the inscriptions on the fountain.',
-    answer: 'GreatPower'
+    answer: 'Agret Werop'
   },
   {
     clue: 'To my left is Caduceus, and a bundle of crops. To my right is a wood stock. What weapon am I? The answer can be removed from your inquiries.',

@@ -137,7 +137,7 @@ const mockCharacter = [
   },
   {
     name: 'Andrew Looney',
-    image: 'https://imgur.com/scfpRpL',
+    image: 'https://i.imgur.com/scfpRpL.png',
     TourId: 1,
     description: 'Eerie games salesman found unconscious near crime scenes.'
   },
@@ -196,7 +196,7 @@ const mockCharacter = [
   },
   {
     name: 'Sam Sacrifice',
-    image: 'https://imgur.com/ToLNRcR',
+    image: 'https://i.imgur.com/ToLNRcR.png',
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'

@@ -1,5 +1,6 @@
 const { Player, Booking, Tour } = require('../model/index');
 
+
 const joinGame = async (req, res) => {
   const { password, userId } = req.body;
   console.log('Join Game');
@@ -16,7 +17,7 @@ const joinGame = async (req, res) => {
         tour: tour.title,
         clues: tour.clues
       }); //player already in game
-    } else if (playerInGame === null && booking.joined < booking.partySize) {
+    } else if (playerInGame === null && booking.joined < booking.partySize && booking.open === true) {
       await Player.create({
         BookingId: booking.id,
         UserId: userId

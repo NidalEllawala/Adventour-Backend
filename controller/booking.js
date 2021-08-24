@@ -29,4 +29,15 @@ const createNewBooking = async (req, res) => {
   }
 };
 
-module.exports = { getBooking, createNewBooking };
+const closeBooking = async (req, res) => {
+  try {
+    const booking = await Booking.findOne({where: {id: req.body.bookingId}});
+    booking.open = false;
+    res.status(200).json({response: 'Booking closed'})
+  } catch (error) {
+    console.log(error);
+    res.send(500).json({response: 'Internal server error'})
+  }
+}
+
+module.exports = { getBooking, createNewBooking, closeBooking };

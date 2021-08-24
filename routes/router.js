@@ -6,6 +6,7 @@ const { getBooking, createNewBooking } = require('../controller/booking');
 const { joinGame } = require('../controller/player');
 const { getAddInfo } = require('../controller/addInfo');
 const { getNextClue } = require('../controller/clues');
+const { createPayment } = require('../controller/payment');
 
 router.post('/registerUser', registerUser);
 router.post('/loginUser', loginUser);
@@ -20,5 +21,7 @@ router.post('/joinGame', joinGame);
 
 router.post('/addInfo', getAddInfo);
 router.post('/getNextClue', getNextClue);
+
+router.post('/create-payment-intent', createPayment);
 
 module.exports = { router };

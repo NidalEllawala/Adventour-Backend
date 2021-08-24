@@ -125,7 +125,7 @@ const mockBooking = {
 const mockCharacter = [
   {
     name: 'Penny Maroon',
-    image: 'https://i.imgur.com/yR3iRRV.png',
+    image: 'https://i.imgur.com/OmMVpo2.png',
     TourId: 1,
     description: 'Vengeful school peer bullied by Agatha Marpe 15 years ago.'
   },
@@ -137,39 +137,39 @@ const mockCharacter = [
   },
   {
     name: 'Andrew Looney',
-    image: 'https://i.imgur.com/oY6tjpt.png',
+    image: 'https://imgur.com/scfpRpL',
     TourId: 1,
     description: 'Eerie games salesman found unconscious near crime scenes.'
   },
   {
     name: 'Sara Plum',
-    image: 'https://i.imgur.com/xRcGMJV.png',
+    image: 'https://i.imgur.com/52dpDVw.png',
     TourId: 1,
     description: "Cilla's PA. Found Cilla's plans to siphon money from victims."
   },
   {
     name: 'Adelphi Darker',
-    image: 'https://i.imgur.com/6JG07IS.png',
+    image: 'https://i.imgur.com/JqKTfnC.png',
     TourId: 1,
     description: 'Owns Darker Bros (a huge game manufacturer) with Duke.'
   },
   {
     name: 'Duke Darker',
-    image: 'https://i.imgur.com/JtyyBRI.png',
+    image: 'https://i.imgur.com/iOFGQ4l.png',
     TourId: 1,
     description:
       'Had affair with Cilla, who later blackmailed him for his wealth.'
   },
   {
     name: 'Tim Tycoon',
-    image: 'https://i.imgur.com/RXqtR8r.png',
+    image: 'https://i.imgur.com/nHk8EMi.png',
     TourId: 1,
     description:
       "Son of a senile property mogul. Saw father's wife Cilla have an affair."
   },
   {
     name: 'Henrietta Green',
-    image: 'https://i.imgur.com/ScWIfof.png',
+    image: 'https://i.imgur.com/hJKWZA3.png',
     TourId: 1,
     description: 'Seen near crime scene with a dagger in her handbag.'
   },
@@ -196,7 +196,7 @@ const mockCharacter = [
   },
   {
     name: 'Sam Sacrifice',
-    image: 'https://i.imgur.com/NASDgvC.png',
+    image: 'https://imgur.com/ToLNRcR',
     TourId: 1,
     description:
       'Psychiatrist. Lust for Cilla always denied as not filthy rich.'

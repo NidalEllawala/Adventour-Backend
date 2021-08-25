@@ -38,7 +38,7 @@ const mockTours = [
     price: 25.0,
     clues: 16,
     images:
-      'https://www.history.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTU3ODc5MDg1NjI4MDA3NzUz/jack-the-ripper-2.jpg'
+      'https://www.history.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTU3ODc5MDg1NjI4MDA3NzUz/jack-the-ripper-2.jpg',
   },
   {
     title: 'A monopoly of murder',
@@ -51,7 +51,7 @@ const mockTours = [
       'Agatha at The Angel Islington… Barbara on Bow Street… And now Cilla on Coventry Street. Three seduced ladies were murdered with a deliberate trail of taunting calling cards left by the cunning culprit. You face your most formidable challenge yet, with wits matched against an egotistical maniac. Can you deduce who the serial killer is and put an end to this sequence of catastrophes before they strike again?',
     distance: 3.9,
     price: 30.0,
-    images: 'https://i.ytimg.com/vi/cPWFE4o2Ao0/maxresdefault.jpg'
+    images: 'https://i.ytimg.com/vi/cPWFE4o2Ao0/maxresdefault.jpg',
   },
   {
     title: 'The strangest things',
@@ -65,7 +65,7 @@ const mockTours = [
     distance: 3.9,
     price: 30.0,
     images:
-      'https://killertrails.co.uk/wp-content/uploads/2020/01/CityOfLondon_801x801px_x-324x324.jpg'
+      'https://killertrails.co.uk/wp-content/uploads/2020/01/CityOfLondon_801x801px_x-324x324.jpg',
   },
   {
     title: 'Scotland Yard Crimes',
@@ -79,7 +79,7 @@ const mockTours = [
     distance: 3.9,
     price: 30.0,
     images:
-      'https://www.mike-neville-walks-and-talks.co.uk/images/scotland-yard.jpg'
+      'https://www.mike-neville-walks-and-talks.co.uk/images/scotland-yard.jpg',
   },
   {
     title: 'Criminal women',
@@ -93,7 +93,7 @@ const mockTours = [
     distance: 4.5,
     price: 30.0,
     images:
-      'https://images-na.ssl-images-amazon.com/images/I/515d6CW65tL._SX345_BO1,204,203,200_.jpg'
+      'https://images-na.ssl-images-amazon.com/images/I/515d6CW65tL._SX345_BO1,204,203,200_.jpg',
   },
   {
     title: 'Criminal ass',
@@ -107,8 +107,8 @@ const mockTours = [
     distance: 3.9,
     price: 30.0,
     images:
-      'https://image.shutterstock.com/image-photo/ass-hole-white-buffalo-600w-1021614685.jpg'
-  }
+      'https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/United%20Kingdom/London/london-aerial-thames-guide-xlarge.jpg',
+  },
 ];
 
 const mockBooking = {
@@ -207,37 +207,37 @@ const mockWeapon = [
   {
     name: 'Dagger',
     image:
-      'https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-cartoon-military-dagger-illustration-image_1290890.jpg',
+      'https://e7.pngegg.com/pngimages/871/558/png-clipart-brown-handled-knife-illustration-knife-u5200u5b50-google-s-cartoon-knife-fruit-dagger.png',
     TourId: 1,
-    number: 1910
+    number: 1910,
   },
   {
     name: 'Rope',
     image:
       'https://media.istockphoto.com/vectors/rope-in-cartoon-style-vector-id1159542493?k=6&m=1159542493&s=170667a&w=0&h=wjH2ca30O3JW08j2_uytbN6uRCxwh5_4aeuPfi6Yl-U=',
     TourId: 1,
-    number: 8971
+    number: 8971,
   },
   {
     name: 'Boot',
     image:
       'https://img.pixers.pics/pho_wat(s3:700/FO/59/87/11/18/700_FO59871118_ae92c5254a9cb227439de7fed6ff1bcc.jpg,700,628,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,578,jpg)/posters-old-shoe-or-boot-cartoon-clip-art.jpg.jpg',
     TourId: 1,
-    number: 1853
+    number: 1853,
   },
   {
     name: 'Lead Pipe',
     image:
       'https://thumbs.dreamstime.com/b/sticker-cartoon-old-pipe-creative-illustrated-147737535.jpg',
     TourId: 1,
-    number: 1642
+    number: 1642,
   },
   {
     name: 'Axe',
     image:
       'https://thumbs.dreamstime.com/b/cartoon-ax-hatchet-vector-symbol-icon-design-beautiful-illustration-isolated-white-background-91710927.jpg',
     TourId: 1,
-    number: 1818
+    number: 1818,
   },
   // {
   //   name: 'Baton',
@@ -251,8 +251,8 @@ const mockWeapon = [
     image:
       'https://image.shutterstock.com/image-vector/weapon-rifle-gun-vector-military-260nw-1954604344.jpg',
     TourId: 1,
-    number: 1535
-  }
+    number: 1535,
+  },
 ];
 
 const mockCharingCrossCharmer = [

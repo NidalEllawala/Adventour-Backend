@@ -115,10 +115,8 @@ const mockBooking = {
   password: 12345,
   partySize: 2,
   joined: 0,
-  date: "2021-10-19 10:23:54+02",
   UserId: 1,
   TourId: 1,
-  chapter: 1,
   open: true,
 };
 

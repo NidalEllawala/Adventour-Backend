@@ -25,7 +25,11 @@ const createNewBooking = async (req, res) => {
     res.status(201).json(newBooking);
   } catch (error) {
     console.log(error);
-    res.status(401).send('Bookings for this tour are currently full');
+    res.status(503).json({
+      error: '004',
+      message: 'Unable to create new booking',
+      detail: 'Invalid booking details'
+    });
   }
 };
 
@@ -33,10 +37,14 @@ const closeBooking = async (req, res) => {
   try {
     const booking = await Booking.findOne({where: {id: req.body.bookingId}});
     booking.open = false;
-    res.status(200).json({response: 'Booking closed'})
+    res.sendStatus(200);
   } catch (error) {
     console.log(error);
-    res.send(500).json({response: 'Internal server error'})
+    res.status(500).json({
+      error: '005',
+      message: 'Unable to create new booking',
+      detail: 'Internal server error'
+    });
   }
 }
 

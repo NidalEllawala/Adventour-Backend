@@ -17,6 +17,11 @@ const getTours = async (req, res) => {
     res.status(200).json(allTours);
   } catch (error) {
     console.log(error);
+    res.status(500).json({
+      error: '006',
+      message: 'Unable to get list of tours',
+      detail: 'Internal server error'
+    })
   }
 };
 
@@ -26,6 +31,11 @@ const getIndividualTour = async (req, res) => {
     res.status(200).json(indTour);
   } catch (error) {
     console.log(error);
+    res.status(500).json({
+      error: '006',
+      message: 'Unable to get individual tour',
+      detail: 'Internal server error'
+    })
   }
 };
 

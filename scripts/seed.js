@@ -105,11 +105,7 @@ const mockTours = [
     distance: 4.5,
     price: 30.0,
     images:
-<<<<<<< HEAD
       "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/MSNBC/Components/Photo/_new/romanempire.jpg",
-=======
-      'https://images-na.ssl-images-amazon.com/images/I/515d6CW65tL._SX345_BO1,204,203,200_.jpg',
->>>>>>> 94883f36b15f2b950fee75c0554d6f7132c8b285
   },
   {
     title: "Thames River Sightseeing",

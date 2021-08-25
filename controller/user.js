@@ -6,24 +6,32 @@ const user = require('../model/user');
 const registerUser = async (req, res) => {
   try {
     const { username, password, email, DOB } = req.body;
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(password, salt);
-    const newUser = await User.create({
-      username,
-      password: hashedPassword,
-      email,
-      DOB
-    });
-    res.status(201).json({
-      username: newUser.username,
-      userId: newUser.id
-    });
+    if (password.length >= 4) {
+      const salt = await bcrypt.genSalt(10);
+      const hashedPassword = await bcrypt.hash(password, salt);
+      const newUser = await User.create({
+        username,
+        password: hashedPassword,
+        email,
+        DOB
+      });
+      res.status(201).json({
+        username: newUser.username,
+        userId: newUser.id
+      });
+    } else {
+      res.status(401).json({
+        error: '001',
+        message: 'Failed to register new user',
+        detail: 'Password needs to be between 4 and 20 characters long'
+      });
+    }
   } catch (error) {
     console.log(error);
     res.status(400).json({
       error: '001',
       message: 'Failed to register new user',
-      detail: 'Ensure username or email is unique and password field is filled' 
+      detail: 'Ensure username or email is unique and password field is filled'
     });
   }
 };

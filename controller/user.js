@@ -1,6 +1,7 @@
 const { User } = require('../model/index');
 
 const bcrypt = require('bcrypt');
+const user = require('../model/user');
 
 const registerUser = async (req, res) => {
   try {
@@ -13,11 +14,17 @@ const registerUser = async (req, res) => {
       email,
       DOB
     });
-    console.log('here is the user: ', newUser);
-    res.status(201).json(newUser);
+    res.status(201).json({
+      username: newUser.username,
+      userId: newUser.id
+    });
   } catch (error) {
-    res.status(400).send(error);
     console.log(error);
+    res.status(400).json({
+      error: '001',
+      message: 'Failed to register new user',
+      detail: 'Ensure username or email is unique and password field is filled' 
+    });
   }
 };
 
@@ -32,19 +39,34 @@ const loginUser = async (req, res) => {
     }
 
     if (!user) {
-      res.status(401).send({response: 'Invalid login credentials. Please try again!'});
+      res.status(401).json({
+        error: '002',
+        message: 'Invalid login credentials',
+        detail: 'Authentication failed due to incorrect username or password'
+      });
     } else {
       const validPassword = await bcrypt.compare(password, user.password);
 
       if (validPassword) {
-        res.status(200).json(user);
+        res.status(200).json({
+          username: user.username,
+          userId: user.id
+        });
       } else {
-        res.status(401).send({response: 'Invalid login credentials. Please try again!'});
+        res.status(401).json({
+          error: '002',
+          message: 'Invalid login credentials',
+          detail: 'Authentication failed due to incorrect username or password'
+        });
       }
     }
   } catch (error) {
-    res.send({response: 'Login unsuccessful'});
     console.log(error);
+    res.status(500).json({
+      error: '003',
+      message: 'Login failed due to server error',
+      detail: 'Server was ubnbale to retrieve user details from database'
+    });
   }
 };
 

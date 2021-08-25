@@ -38,11 +38,7 @@ const mockTours = [
     price: 25.0,
     clues: 16,
     images:
-<<<<<<< HEAD
       "https://www.tate.org.uk/art/images/work/P/P13/P13539_10.jpg",
-=======
-      'https://www.history.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTU3ODc5MDg1NjI4MDA3NzUz/jack-the-ripper-2.jpg',
->>>>>>> 94883f36b15f2b950fee75c0554d6f7132c8b285
   },
   {
     title: "The Da Vinci Code",
@@ -55,11 +51,7 @@ const mockTours = [
       "Take to the streets of Paris and follow Da Vinci's trail to find the Mona Lisa!",
     distance: 3.9,
     price: 30.0,
-<<<<<<< HEAD
     images: "https://www.museumnext.com/wp-content/uploads/2019/01/louvre_popular.jpg",
-=======
-    images: 'https://i.ytimg.com/vi/cPWFE4o2Ao0/maxresdefault.jpg',
->>>>>>> 94883f36b15f2b950fee75c0554d6f7132c8b285
   },
   {
     title: "London in Bloom",
@@ -73,11 +65,7 @@ const mockTours = [
     distance: 3.9,
     price: 30.0,
     images:
-<<<<<<< HEAD
       "https://images.squaremeal.co.uk/cloud/article/9513/images/sky-garden-venue_05122019043209.jpg?w=1000",
-=======
-      'https://killertrails.co.uk/wp-content/uploads/2020/01/CityOfLondon_801x801px_x-324x324.jpg',
->>>>>>> 94883f36b15f2b950fee75c0554d6f7132c8b285
   },
   {
     title: "Scotland Yard Crimes",
@@ -119,11 +107,7 @@ const mockTours = [
     distance: 3.9,
     price: 30.0,
     images:
-<<<<<<< HEAD
-      "https://image.shutterstock.com/image-photo/ass-hole-white-buffalo-600w-1021614685.jpg",
-=======
       'https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/United%20Kingdom/London/london-aerial-thames-guide-xlarge.jpg',
->>>>>>> 94883f36b15f2b950fee75c0554d6f7132c8b285
   },
 ];
 
@@ -224,11 +208,7 @@ const mockWeapon = [
   {
     name: "Dagger",
     image:
-<<<<<<< HEAD
       "https://lh3.googleusercontent.com/proxy/yPAoCbptoFcLvT_h8N34CFrpf1F02lLjuZ4WWeT8wuJsf5MG_FUMbP7Eim4o-L-nNF0b5Rno1BNXVjsev441oYOdkPczWSYsvHD0NwDh5YB2jyu_U3GCMTfbJyY81VwbdA3Wu8etyteMV9nw9sY5_XDhnYgW2XRy0uh96KPHHLxxLQgcllyhyEMcy8s",
-=======
-      'https://e7.pngegg.com/pngimages/871/558/png-clipart-brown-handled-knife-illustration-knife-u5200u5b50-google-s-cartoon-knife-fruit-dagger.png',
->>>>>>> 94883f36b15f2b950fee75c0554d6f7132c8b285
     TourId: 1,
     number: 1910,
   },

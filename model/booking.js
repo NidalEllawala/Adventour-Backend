@@ -9,17 +9,12 @@ module.exports = (sequelize, DataTypes) => {
     joined: {
       type: DataTypes.INTEGER
     },
-    date: {
-      type: DataTypes.DATE
-    },
     open: {
       type: DataTypes.BOOLEAN
     },
-    chapter: {
-      type: DataTypes.INTEGER
-    }
   });
   return booking;
 };
+
 
 

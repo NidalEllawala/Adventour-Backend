@@ -6,11 +6,16 @@ const getNextClue = async (req, res) => {
     const nextClue = await CharingCrossCharmer.findOne({
       where: { id: req.body.clueNumber }
     });
-    console.log(nextClue);
     res.status(200).json(nextClue);
   } catch (error) {
     console.log(error);
+    res.status(500).json({
+      error: '006',
+      message: 'Unable to get next clue',
+      detail: 'Internal server error'
+    })
   }
 };
+
 
 module.exports = { getNextClue };

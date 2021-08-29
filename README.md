@@ -28,23 +28,24 @@ In order to run Adventour it is necessary to install and set-up Expo. Please ref
 1. Clone this repo & enter:
 
 ```
+git clone https://github.com/NidalEllawala/Adventour-Backend.git
+cd server
+```
+
+2. Run `npm install` to install project dependencies into your local repo.
+3. Create a local env. file and input local variables using the env-template file in the root of the folder as a guide.
+4. Make sure PostgreSQL is running.
+5. Run ` npm run dev:seed` to populate your database.
+6. Run ` node index.js` or `nodemon` to start the backend.
+
+7. Clone the front-end repo and enter:
+```
 git clone https://github.com/jah-edw/Adventour-Frontend.git
 cd client
 ```
 
-2. Run `npm install` to install project dependencies into your local repo.
-3. Run `npm start` to generate a QR code which can be read on your mobile (you will need to download the Expo Go mobile app)
-4. Clone the backend repo:
-
-```
-git clone https://github.com/NidalEllawala/Adventour-Backend.git
-```
-
-5. Run `npm install` to install project dependencies into your local repo.
-6. Create a local env. file and input local variables using the env-template file in the root of the folder as a guide.
-7. Make sure PostgreSQL is running.
-8. Run ` npm run dev:seed` to populate your database.
-9. Run ` node index.js` or `nodemon` to start the backend.
+8. Run `npm install` to install project dependencies into your local repo.
+9. Run `npm start` to generate a QR code which can be read on your mobile (you will need to download the Expo Go mobile app)
 10. Time to start exploring London!
 
 ## Features

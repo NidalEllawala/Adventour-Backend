@@ -12,16 +12,16 @@ router.post('/registerUser', registerUser);
 router.post('/loginUser', loginUser);
 
 router.get('/getTours', getTours);
-router.post('/getIndividualTour', getIndividualTour);
+router.get('/getIndividualTour/:title', getIndividualTour);
 
 router.post('/newBooking', createNewBooking);
 router.get('/getBooking', getBooking);
-router.post('/closeBooking', closeBooking )
+router.post('/closeBooking', closeBooking );
 
 router.post('/joinGame', joinGame);
 
-router.post('/addInfo', getAddInfo);
-router.post('/getNextClue', getNextClue);
+router.get('/addInfo/:tourId', getAddInfo);
+router.get('/getNextClue', getNextClue);
 
 router.post('/create-payment-intent', createPayment);
 

@@ -27,7 +27,7 @@ const getTours = async (req, res) => {
 
 const getIndividualTour = async (req, res) => {
   try {
-    const indTour = await Tour.findOne({ where: { title: req.body.title } });
+    const indTour = await Tour.findOne({ where: { title: req.params.title } });
     res.status(200).json(indTour);
   } catch (error) {
     console.log(error);

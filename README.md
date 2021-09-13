@@ -10,10 +10,10 @@
 
 ## Introduction
 
-[<Img src="./client/assets/characters.png" width="200px"/>][adventour]
-[<Img src="./client/assets/explore.png" width="200px"/>][adventour]
-[<Img src="./client/assets/login.png" width="200px"/>][adventour]
-[<Img src="./client/assets/individualtour.png" width="200px"/>][adventour]
+[<Img src="https://i.imgur.com/mRT7aYx.png" width="200px"/>][adventour]
+[<Img src="https://i.imgur.com/aYaDqhj.png" width="200px"/>][adventour]
+[<Img src="https://i.imgur.com/vlM8hZB.jpg" width="200px"/>][adventour]
+[<Img src="https://i.imgur.com/K55z8eF.jpg" width="200px"/>][adventour]
 
 Adventour aims to reinvent the traditional way of exploring new places. The app allows you to browse tours, the results can be filtered to a genre of your interest. The tours are an interactive way to experience the history and culture of a city.
 
